@@ -60,7 +60,7 @@ button
 }
 #about
 {
-display: flex;
+    display: flex;
     justify-content: center; 
     align-items: center; 
     gap: var(--defaultMargin);
@@ -73,13 +73,6 @@ h1
 {
     font-weight: Bold;
 }
-.gameSection
-{
-    display: flex;
-    justify-content: center;
-    width:100vw;
-    
-}
 .whitetext
 {
     color: white;
@@ -88,8 +81,7 @@ h1
 {
     display: flex;
     gap: var(--defaultMargin);
-    
-    
+   
 }
 .gamebox
 {
@@ -101,9 +93,11 @@ h1
 #games
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--defaultMargin);
-    margin: var(--sectionMargin) 0;
+    margin: var(--sectionMargin) auto;
+    width: 70vw;
+    
 }
 #showreel
 {
@@ -129,3 +123,4 @@ img
 {
     object-fit: cover;
 }
+
