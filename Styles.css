@@ -62,7 +62,6 @@ button
 {
     display: flex;
     justify-content: center; 
-    align-items: center; 
     gap: var(--defaultMargin);
     width: 70vw; 
     margin: var(--sectionMargin) auto; 
