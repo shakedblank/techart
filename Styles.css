@@ -1,22 +1,38 @@
+:root
+{
+--defaultMargin:20px;
+--sectionMargin:20px;
+
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body
 {
     background-color: black;
     font-family: "Kode Mono", monospace;
-    
+
     
 }
 header
 {
-    
+    margin: 10px 0 10px 10px;
     height: 50px;
     display: flex;
     align-items: center;
 
 
 }
+button
+{
+    padding: 4px;
+}
 .topButtons
 {
-    padding-left: 20px;
+    padding-left: var(--defaultMargin);
     
 }
 .buttons
@@ -44,10 +60,12 @@ header
 }
 #about
 {
-    display: flex;
-    gap:20px;
-    width:70vw;
-    
+display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: var(--defaultMargin);
+    width: 70vw; 
+    margin: var(--sectionMargin) auto; 
 }
 
 
@@ -60,6 +78,7 @@ h1
     display: flex;
     justify-content: center;
     width:100vw;
+    
 }
 .whitetext
 {
@@ -68,7 +87,8 @@ h1
 .gameinfobox
 {
     display: flex;
-    gap: 20px;
+    gap: var(--defaultMargin);
+    
     
 }
 .gamebox
@@ -76,24 +96,36 @@ h1
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: var(--defaultMargin);
 }
 #games
 {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: var(--defaultMargin);
+    margin: var(--sectionMargin) 0;
 }
 #showreel
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: var(--sectionMargin) 0;
 }
 footer
 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 90px;
+    gap: 10px;
+}
+#showreelTitle
+{
+    margin: 0 0 20px 0;
+}
+img
+{
+    object-fit: cover;
 }
