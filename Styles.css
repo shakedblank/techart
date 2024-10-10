@@ -127,10 +127,23 @@ img
 .gameSection
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width:100vw;
-    
+    gap: var(--defaultMargin);
 }
+.controls
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.mobileimage
+{
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px)
 {
@@ -155,5 +168,19 @@ img
    {
     margin: 0;
     text-align: center;
+   }
+   .mobileimage
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    gap: var(--defaultMargin);
+
+   }
+   .gameSection
+   {
+    display: none;
    }
 }
